@@ -5,62 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>予告状</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-      background-color: #fefefe;
-      color: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 1rem;
-    }
-    .page {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-    .page.active {
-      display: flex;
-    }
-    .btn {
-      padding: 0.5rem 1rem;
-      background: #222;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .input {
-      padding: 0.4rem;
-      font-size: 1rem;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-    }
-    .error {
-      color: crimson;
-      margin-top: 0.5rem;
-    }
-  </style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Yu Gothic", "游ゴシック", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    background-color: #fff;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+  }
+  .page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .page.active {
+    display: flex;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .input {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  .error {
+    color: crimson;
+    margin-top: 0.5rem;
+  }
+
+  h1, h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .kaito-mark {
+    width: 80px;
+    height: auto;
+    margin-top: 0.2rem;
+  }
+
+  .footer-note {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 0.5rem;
+  }
+
+  .letter-content {
+    max-width: 500px;
+    line-height: 1.8;
+    font-size: 1rem;
+    white-space: pre-line;
+  }
+</style>   
 </head>
 <body>
   <!-- Page 1: 予告状 -->
   <div class="page active" id="page1">
     <h1>予告状</h1>
-    <p>今夜8時、私はあなたの研究論文を盗む！</p>
-    <p>親愛なるお嬢さん</p>
-    <p style="margin-top: 1rem;">怪盗キッド</p>
-    <img src="kaito_mark.png" alt="怪盗基德标志" style="width: 80px; height: auto;">
-    <p style="font-size: 0.9rem; color: #888;">※本页将在 8 秒后自动消失……请准备好迎接挑战。</p>
+    <p style="font-size: 1.2rem;">今夜8時、私はあなたの研究論文を盗む！</p>
+    <p style="font-size: 1.2rem;">親愛なるお嬢さん</p>
+    <p style="margin-top: 1rem; font-size: 1.1rem;">怪盗キッド</p>
+    <img src="kaito_mark.png" alt="怪盗基德标志" class="kaito-mark">
+    <p class="footer-note">※本页将在 8 秒后自动消失……请准备好迎接挑战。</p>
   </div>
-
   <!-- Page 2: 密码输入 -->
   <div class="page" id="page2">
     <h2>请输入徐广的生日：</h2>
