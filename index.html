@@ -73,6 +73,26 @@
     font-size: 1rem;
     white-space: pre-line;
   }
+    .signature-block {
+  position: relative;
+  align-self: flex-end;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.signature-text {
+  font-size: 1.1rem;
+  text-align: right;
+  margin-bottom: 0.2rem;
+}
+
+.kaito-mark {
+  width: 24px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 1.4rem; /* 微调使它在文字下方偏右 */
+}
 </style>   
 </head>
 <body>
@@ -80,9 +100,11 @@
   <div class="page active" id="page1">
     <h1>予告状</h1>
     <p style="font-size: 1.2rem;">今夜8時、私はあなたの研究論文を盗む！</p>
-    <p style="font-size: 1.2rem;">親愛なるお嬢さん</p>
-    <p style="margin-top: 1rem; font-size: 1.1rem;">怪盗キッド</p>
-    <img src="kaito_mark.png" alt="怪盗基德标志" class="kaito-mark">
+    <p style="font-size: 1.2rem;">親愛なるお嬢さん</p>    
+    <div class="signature-block">
+      <p class="signature-text">怪盗キッド</p>
+      <img src="kaito_mark.png" alt="怪盗基德标志" class="kaito-mark">
+    </div>    
     <p class="footer-note">※本页将在 8 秒后自动消失……请准备好迎接挑战。</p>
   </div>
   <!-- Page 2: 密码输入 -->
